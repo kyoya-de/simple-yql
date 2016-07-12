@@ -13,7 +13,7 @@ composer require kyoya-de/simple-yql
 Example
 =======
 
-```
+```php
 use Kyoya\YQL;
 use Kyoya\YQL\YQL as YQLClient;
 use Kyoya\YQL\Expression;
