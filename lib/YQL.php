@@ -48,9 +48,9 @@ class YQL {
 
         $queryString = $this->buildHttpQueryString($params);
 
-        $response = $this->client->request('GET', $this->buildBaseUrl() . '?' . $queryString);
+        $response = $this->client->get($this->buildBaseUrl() . '?' . $queryString);
 
-        $rawContents = GuzzleHttp\json_decode($response->getBody()->getContents());
+        $rawContents = $response->json(['object' => true]);
 
         return $rawContents->query;
     }
