@@ -1,0 +1,20 @@
+{
+  "name": "kyoya-de/simple-yql",
+  "description": "This is a (more or less) simple client for the Yahoo Query Language (YQL).",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stefan Krenz",
+      "email": "info@kyoya.de"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kyoya\\YQL\\": "lib/"
+    }
+  }
+}
